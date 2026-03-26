@@ -6,9 +6,21 @@ private int tipo;
 private double salario;
 private double comissao;
 private double bonus;
+
+public Empregado(String nome, int idade, int tipo, double salario, double comissao, double bonus){
+    this.nome = nome;
+    this.idade = idade;
+    this.tipo = tipo;
+    this.salario = salario;
+    this.comissao = comissao;
+    this.bonus = bonus;
+
+
+}
+
 public double calcularSalario(){
    
-   if(tipo ==1){
+   if(tipo == 1){
     return salario;
 
    } else if (tipo == 2){
